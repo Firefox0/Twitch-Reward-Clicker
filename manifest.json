@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "TwitchRewardClicker",
+    "version": "0.1",
+  
+    "description": "Clicks on the twitch reward button automatically. That's it.",
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.twitch.tv/*"],
+        "js": ["twitchrewardclicker.js"]
+      }
+    ],
+
+    "permissions": [
+      "*://*.twitch.tv/*"
+    ]
+}
